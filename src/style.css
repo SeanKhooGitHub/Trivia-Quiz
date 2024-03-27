@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+SC&family=Inconsolata:wght@700&family=Inter:wght@400;600;700&family=Karla:wght@400;700&family=Kumbh+Sans&family=Open+Sans&family=Poppins:wght@300;600&family=Roboto:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-padding: 10px;
+}
+
+body {
+    background: black;
+}
+
+.start p {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+}
+
+.start .intruc-button {
+    background: rgb(53, 44, 173);
+    width: 100px;
+    height: 50px;
+}
+
+.start #refresh {
+    visibility: hidden;
+}
+
+.start .main-title {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 200px;
+    animation: ani1 2s ease-in forwards;
+}
+
+.start .far {
+    color: #fff;
+    font-size: 45px;
+    margin-top: 50px;
+    animation: ani1 3s ease-in 1s forwards;
+    opacity: 0;
+}
+
+.start .far span{
+    color: rgb(53, 44, 173);
+    animation: ani1 3s ease-in 2s forwards;
+    opacity: 0;
+}
+
+.start .start-button {
+    display: block;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    margin-top: 100px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: ani2 4s 4s forwards;
+    opacity: 0;
+}
+
+.start .prevLevel {
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+    animation: ani1 3s ease-in 6s forwards;
+    opacity: 0;
+}
+
+@keyframes ani1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes ani2 {
+    0% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.start button:hover {
+    background: purple;
+}
+
+.start .instructions {
+    margin-top: 500px;
+}
+
+.start .instructions p{
+    color: #fff;
+    font-size: 60px;
+}
+
+.start .instructions ol li{
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    line-height: 80px;
+    padding-left: 15px;
+}
+
+.start .instructions ol li span{
+    color: rgb(53, 44, 173);
+    font-family: 'Abril Fatface', cursive;
+}
+
+.start .instructions .green span{
+    color: #5FF7AE;
+}
+
+.start .instructions .yellow span{
+    color: #E5EC2D;
+}
+
+.start .instructions .red span{
+    color: red;
+}
+
+.start .instructions .list {
+    display: flex;
+    justify-content: center;
+}
+
+.start .instructions ol {
+    margin-top: 50px;
+}
+
+.start .instructions ol ul li img{
+    width: 50px;
+    height: 50px;
+}
+
+.start .instructions ol ul {
+    list-style-type: square;
+}
+
+.main .title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.main .title span{
+    color: rgb(53, 44, 173);
+}
+
+.main .points {
+    color: #fff;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.main .points span{
+    color: rgb(53, 44, 173);
+}
+
+.quiz {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.quiz .quiz-container {
+    border: 1px solid #fff;
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.quiz .quiz-container p{
+    color: #fff;
+}
+
+.quiz .quiz-container .first-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px;
+}
+
+.quiz .quiz-container .first-line .point{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 40px;
+    font-family: 800;
+    position: absolute;
+    left: 10px;
+}
+
+.quiz .quiz-container .first-line .warning{
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+}
+
+.quiz .quiz-container .first-line .warningText {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background: rgb(48, 45, 53);
+    left: -10px;
+    top: -75px;
+    border-radius: 10px;
+}
+
+.quiz .quiz-container .first-line .warningText p{
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+    padding: 10px;
+}
+
+.quiz .quiz-container .first-line .warningText span{
+    color: rgb(209, 221, 33);
+}
+
+.quiz .quiz-container .first-line .fire{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.quiz .quiz-container .first-line .difficulty {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background: rgb(48, 45, 53);
+    right: -10px;
+    top: -75px;
+    border-radius: 10px;
+}
+
+.quiz .quiz-container .first-line .difficulty p{
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+    padding: 10px;
+}
+
+.quiz .quiz-container .first-line .index {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+.quiz .quiz-container .category {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.quiz .quiz-container .question {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.quiz .quiz-container .answer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.answer .ans{
+    width: 100%;
+    height: 50px;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 50px;
+    overflow-wrap: break-word;
+    cursor: pointer;
+}
+
+.main .submit {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: blue;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    text-decoration: none;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 50px;
+    text-align: center;
+}
+
+.main .score {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main .msg {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.arrows {
+    position: absolute;
+    height: 190px;
+    width: 60px;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: 80px;
+}
+
+.arrows.active{
+    visibility: hidden;
+}
+
+.arrows path {
+	stroke: #2994D1;
+	stroke-width: 2px;
+    fill: transparent;
+    animation: arrow 3s infinite;
+    opacity: 0;
+}
+
+@keyframes arrow {
+    0% {opacity:0}
+    20%{opacity: 1}
+    40%{opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay: 7s;
+}
+
+.arrows path.a2 {
+    animation-delay: 7.5s;
+}
+
+.arrows path.a3 {
+    animation-delay: 8s;
+}
+
+.footer {
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.footer span{
+    color: rgb(53, 44, 173);
+}
+
+@media (max-width: 1605px) {
+    .quiz .quiz-container .answer {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .quiz .quiz-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .start .instructions ol li{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 894px) {
+    .quiz .quiz-container {
+        height: 500px;
+    }
+    .quiz .quiz-container .first-line .point{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .start .instructions ol li{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .start .instructions ol li{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quiz .quiz-container {
+        height: 520px;
+    }
+    .quiz .quiz-container .first-line .index {
+        font-size: 25px;
+    }
+    .quiz .quiz-container .first-line .point{
+        font-size: 20px;
+    }
+    .quiz .quiz-container .question {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .answer .ans{
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 510px) {
+    .answer .ans{
+        width: 90%;
+    }
+}
+
+
